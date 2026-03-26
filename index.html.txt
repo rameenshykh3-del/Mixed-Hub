@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mixed Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Mixed Hub</h1>
+  <div class="cart-icon">🛒 <span id="count">0</span></div>
+</header>
+
+<section class="products">
+
+  <div class="card">
+    <h3>Deep Frying Pot</h3>
+    <p>Rs. 3000</p>
+    <button onclick="addToCart('Deep Frying Pot',3000)">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <h3>Coffee Mug</h3>
+    <p>Rs. 800</p>
+    <button onclick="addToCart('Coffee Mug',800)">Add to Cart</button>
+  </div>
+
+</section>
+
+<section class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3 id="total">Total: Rs. 0</h3>
+
+  <select id="payment">
+    <option>Cash on Delivery</option>
+    <option>EasyPaisa</option>
+    <option>JazzCash</option>
+    <option>Bank Transfer</option>
+  </select>
+
+  <button class="buy" onclick="orderNow()">Buy Now</button>
+</section>
+
+<footer>
+  <p>Support: your@email.com</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
